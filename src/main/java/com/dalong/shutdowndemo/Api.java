@@ -13,10 +13,15 @@ public class Api {
     @Autowired
     private BizB bizB;
 
+
+    @Autowired
+    private BizC bizC;
+
     @GetMapping(value = {"/demo"})
     public String demo() {
         String a = bizA.acitonA();
         String b = bizB.actionB();
-        return a + b;
+        String c = bizC.actionC();
+        return a + b + c;
     }
 }

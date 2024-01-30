@@ -18,6 +18,10 @@ public class BizC implements ApplicationListener<MyEvent> {
         }
     }
 
+    public  String actionC(){
+        return "actionC";
+    }
+
     @Override
     public void onApplicationEvent(MyEvent event) {
         System.out.println("BizC onApplicationEvent Shutting down");
